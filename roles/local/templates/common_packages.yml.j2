@@ -1,0 +1,10 @@
+---
+
+# must clear for localhost
+ansible_user:
+ansible_become: false
+ansible_connection: local
+
+common_packages:
+  - name: sysbench
+    url: "https://download.pingcap.org/sysbench.tar.gz"
