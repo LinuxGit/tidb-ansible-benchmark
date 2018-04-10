@@ -12,9 +12,6 @@
   - "{{ resources_dir }}"
   - "{{ resources_dir }}/bin"
 
-- name: create packages.yml
-  template: src=common_packages.yml.j2 dest={{ playbook_dir }}/conf/common_packages.yml
-
 - include_vars: file={{ playbook_dir }}/conf/common_packages.yml
 
 # preflight checks
